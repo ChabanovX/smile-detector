@@ -1,0 +1,5 @@
+# packaging
+env/
+
+# other 
+.history/
