@@ -7,7 +7,7 @@ smile_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_smile
 
 
 # My (Yours) Video Camera
-fucking_great_video_cam_capture = cv2.VideoCapture(1)
+fucking_great_video_cam_capture = cv2.VideoCapture(2)
 
 # Check for camera availability
 if not fucking_great_video_cam_capture.isOpened():
@@ -49,7 +49,7 @@ while True:
             cv2.putText(frame, 'Smile Detected!', (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
     
 
-    cv2.imshow("frame", frame)
+    cv2.imshow("", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
