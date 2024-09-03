@@ -1,5 +1,8 @@
 # packaging
 env/
 
-# other 
+# history
 .history/
+
+# image data
+.DS_Store
